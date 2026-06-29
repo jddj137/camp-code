@@ -1,7 +1,5 @@
 from string import digits
 
-PLAYER_COUNT = 2
-
 PLAYER_1_NAME = "Whale"
 PLAYER_2_NAME = "Bug"
 
@@ -13,6 +11,7 @@ PLAYER_2_TOKEN = "\U0001f41b"  # bug
 def print_grid(grid: list[str]) -> None:
     if len(grid) != 9:
         print("Error: Invalid game board!")
+        return
 
     print("")
     print(grid[0] + " | " + grid[1] + " | " + grid[2])
@@ -53,7 +52,7 @@ def next_player(curr_player: str) -> str:
     else:
         return PLAYER_1_NAME
 
-
+# Note: This function could be replaced by a dictionary
 def player_token(curr_player: str) -> str:
     if curr_player == PLAYER_1_NAME:
         return PLAYER_1_TOKEN
