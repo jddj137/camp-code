@@ -4,7 +4,7 @@ from string import digits
 
 # from random import randint
 
-# Game configuration
+# Game settings
 SECRET_LEN = 4
 HARD_MODE = True
 

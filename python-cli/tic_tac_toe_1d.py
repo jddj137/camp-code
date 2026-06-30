@@ -1,5 +1,6 @@
 from string import digits
 
+# Game settings
 PLAYER_1_NAME = "Whale"
 PLAYER_2_NAME = "Bug"
 
@@ -51,6 +52,7 @@ def next_player(curr_player: str) -> str:
         return PLAYER_2_NAME
     else:
         return PLAYER_1_NAME
+
 
 # Note: This function could be replaced by a dictionary
 def player_token(curr_player: str) -> str:
